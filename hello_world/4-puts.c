@@ -1,2 +1,7 @@
 #!/bin/bash
-in puts ( const char * Programming is like building a multilingual puzzle '\0')
+int man(){
+        int puts ( const char  * "Programming is like building a multilingual puzzle." )
+
+	return 0;
+
+          }	
