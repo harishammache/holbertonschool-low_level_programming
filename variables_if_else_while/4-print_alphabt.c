@@ -6,11 +6,12 @@
 */
 int main(void)
 {
-        int letter_lowercase;
+	int letter_lowercase;
 
-        for (letter_lowercase = 'a'; letter_lowercase <= 'z'; letter_lowercase++)
-        {
-		if(letter_lowercase == 'q' || letter_lowercase == 'e')
+	for (letter_lowercase = 'a'; letter_lowercase <= 'z';
+			letter_lowercase++)
+	{
+		if (letter_lowercase == 'q' || letter_lowercase == 'e')
 			continue;
 
 		putchar(letter_lowercase);
