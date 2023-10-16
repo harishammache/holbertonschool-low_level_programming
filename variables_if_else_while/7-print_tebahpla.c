@@ -7,7 +7,7 @@
 int main(void)
 {
 	int Alphabet_reverse;
-	
+
 	for (Alphabet_reverse = 'z'; Alphabet_reverse >= 'a'; Alphabet_reverse--)
 	{
 		putchar(Alphabet_reverse);
@@ -16,4 +16,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-}	
+}
