@@ -20,11 +20,11 @@ int main(void)
 	}
 	else if (n == 5)
 	{
-		printf("%d is %d and is 0\n", n , DernierChiffre);
+		printf("%d is %d and is 0\n", n, DernierChiffre);
 	}
 	else
 	{
-		printf("%d is %d and less than 6 and not 0\n", n , DernierChiffre);
+		printf("%d is %d and less than 6 and not 0\n", n, DernierChiffre);
 	}
 	return (0);
 }
