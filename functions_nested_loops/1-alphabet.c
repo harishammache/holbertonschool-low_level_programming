@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	int alphabet_lowercase;
+	char alphabet_lowercase;
 
 	for (alphabet_lowercase = 'a';  alphabet_lowercase <= 'z';
 			alphabet_lowercase++)
