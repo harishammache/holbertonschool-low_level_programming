@@ -6,12 +6,13 @@ void times_table(void)
 {
 	int a;
 	int b;
+	int multi;
 
 	for (a = 0; a <= 9; a++)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			int multi = a * b;
+			multi = a * b;
 
 			if (multi >= 10)
 			{
@@ -19,15 +20,14 @@ void times_table(void)
 				_putchar((multi % 10) + '0');
 			}
 
-			if (multi <= 9 && multi >= 0)
+			if (multi <= 9)
 			{
-				_putchar(' ');
-				_putchar(multi + '0');
-			}
+				if (b <= 9 && b > 0)
+				{
+					_putchar(' ');
+				}
 
-			if (b == 0)
-			{
-				_putchar(multi);
+				_putchar(multi + '0');
 			}
 
 			if (b < 9)
@@ -35,6 +35,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
+
 		}
 		_putchar('\n');
 	}
