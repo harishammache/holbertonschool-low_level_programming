@@ -19,10 +19,15 @@ void times_table(void)
 				_putchar((multi % 10) + '0');
 			}
 
-			else if (multi <= 9)
+			if (multi <= 9 && multi >= 0)
 			{
-			_putchar(' ');
-			_putchar(multi + '0');
+				_putchar(' ');
+				_putchar(multi + '0');
+			}
+
+			if (b == 0)
+			{
+				_putchar(multi);
 			}
 
 			if (b < 9)
