@@ -11,16 +11,12 @@ void more_numbers(void)
 		{
 			for (numbersB = 0; numbersB <= 14; numbersB++)
 			{
-				if (numbersB < 15)
+				if (numbersB >= 10)
 				{
 					_putchar((numbersB / 10) + '0');
-
-					if (numbersB >= 10)
-					{
-						_putchar((numbersB % 10) + '0');
-					}
 				}
+			_putchar((numbersB % 10) + '0');
 			}
-			_putchar('\n');
+		_putchar('\n');
 		}
 }
