@@ -9,14 +9,13 @@ void print_array(int *a, int n)
 {
 	for (n = 0; a[n] != '\0'; n++)
 	{
-		if (a[n] == (-1024))
+		if (n == 0)
 		{
-			printf(" %d", a[n]);
-			break;
+			printf("%d", a[n]);
 		}
 		else
 		{
-			printf(" %d,", a[n]);
+			printf(", %d", a[n]);
 		}
 	}
 	printf("\n");
