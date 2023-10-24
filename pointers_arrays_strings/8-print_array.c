@@ -7,15 +7,17 @@
 */
 void print_array(int *a, int n)
 {
-	for (n = 0; a[n] != '\0'; n++)
+	int b;
+
+	for (b = 0; b < n; b++)
 	{
-		if (n == 0)
+		if (b == 0)
 		{
-			printf("%d", a[n]);
+			printf("%d", a[b]);
 		}
 		else
 		{
-			printf(", %d", a[n]);
+			printf(", %d", a[b]);
 		}
 	}
 	printf("\n");
