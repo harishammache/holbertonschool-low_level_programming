@@ -12,6 +12,10 @@ void puts_half(char *str)
 	{
 		a++;
 	}
+	if (a % 2 != 0)
+	{
+		a--;
+	}
 	for (b = a / 2; b < a; b++)
 		if (b % 2 != 0)
 		{
