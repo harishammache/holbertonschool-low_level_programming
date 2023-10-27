@@ -13,16 +13,17 @@ char *_strstr(char *haystack, char *needle)
 	int souschaine;
 
 	for (chaine = 0; haystack[chaine] != '\0'; chaine++)
-	{	
-		for (souschaine = 0; needle[souschaine] != '\0' && haystack[chaine + souschaine] == needle[souschaine];
-			       	souschaine++)
+	{
+		for (souschaine = 0; needle[souschaine] != '\0'
+				&& haystack[chaine + souschaine]
+				== needle[souschaine]; souschaine++)
 		{
 
 		}
 		if (needle[souschaine] == '\0')
-                {
+		{
 			return (haystack + chaine);
-                }
+		}
 	}
 	return (NULL);
 }
