@@ -7,16 +7,19 @@
 */
 int _atoi(char *s)
 {
-	int n;
-
-	for (i = 0; s[i] != '\0'; i++)
+	int i = 0;
+	int signe = 1;
+	
+	while (s[i] != '\0')
 	{
-		if (// determiner si + ou -)
+		i++;
+	}
+	for (i = 0; s[i] == '-' || s[i] == '+'; i++)
+	{
+        	if (s[i] == '-')
 		{
+			signe *= -1;
 		}
-		if (// determiner si c un chiffre)
-		{
-			n+ // le chiffre que l'on vient de trouver
-		}
-	}	
+	}
+	return (0);
 }
