@@ -28,5 +28,5 @@ int function(int a, int b)
 */
 int _sqrt_recursion(int n)
 {
-	return (function(n, 1));
+	return (function(n, 0));
 }
