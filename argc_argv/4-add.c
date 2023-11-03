@@ -21,7 +21,6 @@ int main(int argc, char **argv)
 	}
 	for (i = 1; i < argc; i++)
 	{
-		nombre += atoi(argv[i]);
 		for (y = 0; argv[i][y]; y++)
 		{
 			if (!isdigit(argv[i][y]))
@@ -30,6 +29,7 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
+		nombre += atoi(argv[i]);
 	}
 	if (argc > 0 && argc < 10)
 	{
