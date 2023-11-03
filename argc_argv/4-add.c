@@ -31,9 +31,7 @@ int main(int argc, char **argv)
 		}
 		nombre += atoi(argv[i]);
 	}
-	if (argc > 0 && argc < 10)
-	{
-		printf("%d\n", nombre);
-	}
+	printf("%d\n", nombre);
+	
 	return (0);
 }
