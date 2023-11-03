@@ -32,6 +32,5 @@ int main(int argc, char **argv)
 		nombre += atoi(argv[i]);
 	}
 	printf("%d\n", nombre);
-	
 	return (0);
 }
