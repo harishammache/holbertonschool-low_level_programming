@@ -14,6 +14,10 @@ int main(int argc, char **argv)
 	int nombre = 0;
 	int i, y;
 
+	if (argv == 0)
+	{
+		return (0);
+	}
 	for (i = 1; i < argc; i++)
 	{
 		nombre += atoi(argv[i]);
@@ -29,6 +33,6 @@ int main(int argc, char **argv)
 	if (argc > 0 && argc < 10)
 	{
 		printf("%d\n", nombre);
-}
+	}
 	return (0);
 }
