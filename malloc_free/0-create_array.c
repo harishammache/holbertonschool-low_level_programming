@@ -8,10 +8,10 @@
  *
  * Return: NULL if size = 0 or pointer if success
 */
-char *create_array(int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *array_of_char;
-	int i;
+	unsigned int i;
 
 	array_of_char = malloc(size * sizeof(char));
 
@@ -24,5 +24,9 @@ char *create_array(int size, char c)
 		array_of_char[i] = c;
 	}
 	array_of_char[i] = '\0';
+	if (size == 0)
+	{
+		return (NULL);
+	}
 	return (array_of_char);
 }
