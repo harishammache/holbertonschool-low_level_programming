@@ -11,9 +11,9 @@ char *_strdup(char *str)
 {
 	char *str_copie;
 	int i;
-	unsigned int size = 0;
+	int size = 0;
 
-	while (str != '\0')
+	while (str[size] != '\0')
 	{
 		size++;
 	}
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i] <= size; i++)
+	for (i = 0; i <= size; i++)
 	{
 		str_copie[i] = str[i];
 	}
