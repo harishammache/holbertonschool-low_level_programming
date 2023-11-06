@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	str_copie = malloc((sizeof(char) * size) + 1);
+	str_copie = malloc((size + 1)* sizeof(char));
 	if (size == 0)
 	{
 		return (NULL);
@@ -30,6 +30,6 @@ char *_strdup(char *str)
 		str_copie[i] = str[i];
 		i++;
 	}
-	str_copie[i + 1] = '\0';
+	str_copie[size + 1] = '\0';
 	return (str_copie);
 }
