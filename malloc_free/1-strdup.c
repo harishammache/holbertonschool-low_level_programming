@@ -10,7 +10,7 @@
 char *_strdup(char *str)
 {
 	char *str_copie;
-	int i;
+	int i = 0;
 	int size = 1;
 
 	if (str == NULL)
@@ -26,9 +26,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
+	while (i < size)
 	{
 		str_copie[i] = str[i];
+		i++;
 	}
 	str_copie[i] = '\0';
 	return (str_copie);
