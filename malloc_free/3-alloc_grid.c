@@ -32,9 +32,9 @@ int **alloc_grid(int width, int height)
 		dimensional_array[i] = malloc(sizeof(int) * width);
 		if (dimensional_array == 0)
 		{
-			for (i = y; y >= 0; y--)
+			for ( ; i >= 0; i--)
 			{
-				free(dimensional_array[y]);
+				free(dimensional_array[i]);
 			}
 			free(dimensional_array);
 			return (NULL);
