@@ -22,9 +22,5 @@ int *array_range(int min, int max)
 		array_integers[index] = min;
 		min++;
 	}
-	if (array_integers == NULL)
-	{
-		return (NULL);
-	}
 	return (array_integers);
 }
