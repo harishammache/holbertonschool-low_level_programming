@@ -19,15 +19,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	for (index = 0; index < n; index++)
 	{
-		if (index == 0)
+		if (index == n - 1)
 		{
 			printf("%d", va_arg(ap, int));
 		}
 		else
 		{
-			printf(", %d", va_arg(ap, int));
+			printf("%d, ", va_arg(ap, int));
 		}
 	}
+
 	va_end(ap);
 	printf("\n");
 }
