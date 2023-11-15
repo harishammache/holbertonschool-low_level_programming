@@ -60,11 +60,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(*create_dog).name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if ((*create_dog).name == NULL)
 	{
+		free((*create_dog).name);
 		return (NULL);
 	}
 	(*create_dog).owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if ((*create_dog).owner == NULL)
 	{
+		free((*create_dog).owner);
+		free(create_dog);
 		return (NULL);
 	}
 	(*create_dog).name = _strcpy((*create_dog).name, name);
