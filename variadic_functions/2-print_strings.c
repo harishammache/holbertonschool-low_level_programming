@@ -22,6 +22,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", str);
 			printf("%s", separator);
 		}
+		if (str == NULL)
+		{
+			print("(nil)");
+		}
 		else
 		{
 			printf("%s", str);
