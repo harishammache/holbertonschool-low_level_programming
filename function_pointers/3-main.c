@@ -3,7 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main -
+ * main -should contain
+ * @argc: first argument
+ * @argv: second argument
+ *
+ * Return: 0 if success
 */
 int main(int argc, char *argv[])
 {
