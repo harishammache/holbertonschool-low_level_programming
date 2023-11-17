@@ -64,9 +64,9 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
-		{"s", print_string}
+		{"s", print_string},
+		{NULL , NULL}
 	};
-
 	va_start(arg, format);
 
 	while (format != NULL && (format[index]) != '\0')
@@ -75,7 +75,6 @@ void print_all(const char * const format, ...)
 
 		while (index2 <= 3 && format[index] != *(op[index2].ap))
 			index2++;
-
 		if (index2 <= 3)
 		{
 			printf("%s", separator);
