@@ -73,7 +73,7 @@ void print_all(const char * const format, ...)
 	{
 		index2 = 0;
 
-		while (index2 <= 3 && format[index] != *(op[index2]))
+		while (index2 <= 3 && format[index] != *(op[index2]).ap)
 			index2++;
 		if (index2 <= 3)
 		{
