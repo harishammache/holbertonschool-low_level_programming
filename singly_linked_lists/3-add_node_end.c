@@ -13,9 +13,10 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	int index = 0;
 	list_t *new_node, *temp;
+
 	temp = *head;
 
-	while(str[index] != '\0')
+	while (str[index] != '\0')
 	{
 		index++;
 	}
@@ -27,13 +28,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->str = strdup(str);
 	new_node->len = index;
 	new_node->next = NULL;
-	if(*head == NULL)
+	if (*head == NULL)
 	{
 		*head = new_node;
 	}
 	else
 	{
-		while(temp->next != NULL)
+		while (temp->next != NULL)
 		{
 			temp = temp->next;
 		}
