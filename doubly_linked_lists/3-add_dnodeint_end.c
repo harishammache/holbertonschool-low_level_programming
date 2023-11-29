@@ -35,6 +35,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		}
 		temp->next = new_node;
 	}
-	free(new_node);
 	return (new_node);
+	free(new_node);
 }
