@@ -13,10 +13,7 @@ int main(int argc, char **argv)
 	char buf[1024];
 
 	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	o_file = open(argv[1], O_RDONLY);
 	if (o_file == -1)
 	{
@@ -44,10 +41,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	if (close(o_file) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", o_file);
-		exit(100);
-	}
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", o_file), exit(100);
 	if (close(o_file_copy) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", o_file_copy);
